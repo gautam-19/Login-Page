@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">  
+        <div class="form-box">
+            <h1 class="title">Sign Up</h1>
+            <div class="underline"></div>  
+            <form id="signupForm">
+                <div class="input-group">
+                    <div class="input-field nameField">
+                        <i class="fa-solid fa-user"></i>
+                        <input type="text" id="username" placeholder="username">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="password" placeholder="password">
+                    </div>
+                    <p><span class="text">Password Suggestions</span> <a href="#">Click Here!</a> </p>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="SUbtn" id="signup">Sign Up</button>
+                    <button type="button" class="SIbtn" id="signin">Sign In</button>
+                </div>
+            </form>
+        </div> 
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script>
+        document.querySelector('.SIbtn').addEventListener('click', () => {
+            window.location.href = 'signin.html';
+        });
+    </script>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <div class="login-container">  
+    <div class="form-box">
+    <h1 class="title"> Sign Up</h1>
+    <div class = "underline"></div>  
+    <form>
+        <div class="input-group">
+
+            <div class="input-field nameField">
+                <i class="fa-solid fa-user"></i>
+            <input type="text" placeholder="username">
+            </div>
+
+            <div class="input-field">
+                <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="email">
+            </div>
+
+            <div class="input-field">
+                <i class="fa-solid fa-key"></i>
+            <input type="password" placeholder="password">
+            </div>
+            <p><span class="text">Password Suggestions</span> <a href="#">Click Here!</a> </p>
+        </div>
+        <div class="btn">
+            <button type = "button" class="SUbtn">Sign Up</button>
+            <button type = "button" class="disable SIbtn">Sign In</button>
+        </div>
+    </form>
+    </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> -->

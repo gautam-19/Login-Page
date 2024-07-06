@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="login-container">  
+        <div class="form-box">
+            <h1 class="title">Sign In</h1>
+            <div class="underline"></div>  
+            <form id="loginForm">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" placeholder="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-key"></i>
+                        <input type="password" id="password" placeholder="password">
+                    </div>
+                    <p><span class="text">Forgot Password</span> <a href="#">Click Here!</a> </p>
+                </div>
+                <div class="btn">
+                    <button type="submit" class="SIbtn" id="signin">Sign In</button>
+                    <button type="button" class="SUbtn" id="signup">Sign Up</button>
+                </div>
+            </form>
+        </div> 
+    </div>
+    <script type="module" src="firebase.js"></script>
+    <script>
+        document.querySelector('.SUbtn').addEventListener('click', () => {
+            window.location.href = 'index.html';
+        });
+    </script>
+</body>
+</html>
